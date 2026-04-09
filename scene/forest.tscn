@@ -1,0 +1,87 @@
+[gd_scene format=4 uid="uid://vuk8d7tho73o"]
+
+[ext_resource type="PackedScene" uid="uid://vcvi7etjmd4x" path="res://entities/player.tscn" id="1_e2knd"]
+[ext_resource type="TileSet" uid="uid://vqjxxqwnn45t" path="res://tiles/terrain.tres" id="2_2xpkg"]
+[ext_resource type="Texture2D" uid="uid://jv4kmcyvlblv" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="3_gbfvw"]
+[ext_resource type="Texture2D" uid="uid://dc3wegacf354w" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/5 - Tree_row_BG_2.png" id="4_wqnte"]
+[ext_resource type="Texture2D" uid="uid://cofdnjjo12j35" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/4 - Tree_row_BG_1.png" id="5_qxlj4"]
+[ext_resource type="Texture2D" uid="uid://tij8exrn4xo" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/3 - Bottom_leaf_piles.png" id="6_jo4av"]
+[ext_resource type="Texture2D" uid="uid://cn8e46oidcof1" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/2 - Trees.png" id="7_jxvlp"]
+[ext_resource type="Texture2D" uid="uid://bgjpfnen7r877" path="res://sprites/Seasonal Tilesets/2 - Autumn Forest/Background parts/1 - Leaf_top.png" id="8_gwku7"]
+
+[node name="Forest" type="Node2D" unique_id=938879728]
+
+[node name="Player" parent="." unique_id=1211271763 instance=ExtResource("1_e2knd")]
+position = Vector2(108, 175)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=17543084]
+tile_map_data = PackedByteArray("AAAAAAwAAQACAAMAAAABAAwAAQACAAMAAAACAAwAAQACAAMAAAADAAwAAQACAAMAAAAEAAwAAQACAAMAAAAFAAwAAQACAAMAAAAGAAwAAQACAAMAAAAHAAwAAQACAAMAAAAIAAwAAQACAAMAAAAJAAwAAQACAAMAAAAKAAwAAQACAAMAAAALAAwAAQACAAMAAAAMAAwAAQACAAMAAAANAAwAAQACAAMAAAAOAAwAAQACAAMAAAAPAAwAAQACAAMAAAAQAAwAAQACAAMAAAARAAwAAQACAAMAAAASAAwAAQACAAMAAAATAAwAAQACAAMAAAAVAAwAAQACAAMAAAAUAAwAAQACAAMAAAAWAAwAAQACAAMAAAAXAAwAAQACAAMAAAAYAAwAAQACAAMAAAAZAAwAAQACAAMAAAAaAAwAAQACAAMAAAAbAAwAAQACAAMAAAAeAAwAAQACAAMAAAAcAAwAAQACAAMAAAAdAAwAAQACAAMAAAAfAAwAAQACAAMAAAAgAAwAAQACAAMAAAAhAAwAAQACAAMAAAA=")
+tile_set = ExtResource("2_2xpkg")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=903628994]
+
+[node name="6" type="ParallaxLayer" parent="ParallaxBackground" unique_id=470858488]
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/6" unique_id=1766950954]
+texture_repeat = 2
+texture = ExtResource("3_gbfvw")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="5" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1712164518]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/5" unique_id=278806052]
+texture_repeat = 2
+texture = ExtResource("4_wqnte")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="4" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1078747992]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/4" unique_id=102496019]
+texture_repeat = 2
+texture = ExtResource("5_qxlj4")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="3" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1673002451]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/3" unique_id=677651864]
+texture_repeat = 2
+texture = ExtResource("6_jo4av")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="2" type="ParallaxLayer" parent="ParallaxBackground" unique_id=20789007]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/2" unique_id=2085609826]
+texture_repeat = 2
+texture = ExtResource("7_jxvlp")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
+
+[node name="1" type="ParallaxLayer" parent="ParallaxBackground" unique_id=2126527761]
+motion_scale = Vector2(1.2, 1.2)
+motion_mirroring = Vector2(288, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/1" unique_id=1101035921]
+texture_repeat = 2
+texture = ExtResource("8_gwku7")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 576, 208)
